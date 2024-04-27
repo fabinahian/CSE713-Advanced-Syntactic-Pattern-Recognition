@@ -1,7 +1,3 @@
-# Text Classification for Author Attribution
-
-This repository hosts the data and code for the "Text Classification for Author Attribution" project. Our aim is to develop a machine learning model capable of attributing texts to their respective authors based on textual content. The data consists of texts from Project Gutenberg, manually processed to enhance usability for this project.
-
 ## Data Source
 
 The data for this project has been sourced from [Project Gutenberg](https://www.gutenberg.org/), which provides free access to a large collection of literary works in the public domain. We specifically downloaded the "Plain Text UTF-8" format of each book.
