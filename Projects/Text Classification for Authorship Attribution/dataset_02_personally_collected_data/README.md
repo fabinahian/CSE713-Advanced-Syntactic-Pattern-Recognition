@@ -1,65 +1,46 @@
-## Data Source
+# Text Classification for Author Attribution Data Repository
 
-The data for this project has been sourced from [Project Gutenberg](https://www.gutenberg.org/), which provides free access to a large collection of literary works in the public domain. We specifically downloaded the "Plain Text UTF-8" format of each book.
+## Introduction
 
-## Data Selection
+This repository houses the text data for a project on text classification aimed at authorship attribution. The dataset comprises a selection of literary works manually downloaded and preprocessed from Project Gutenberg. These works have been chosen from a variety of authors to train machine learning models that can predict the author of a given text snippet.
 
-We selected three books from each of ten different authors, aiming for a diverse representation of genres and writing styles. The selected works and their corresponding authors are:
+## Data Acquisition
 
-- **James Joyce**
-  - *A Portrait of the Artist as a Young Man*
-  - *Dubliners*
-  - *Ulysses*
-- **Mark Twain**
-  - *Adventures of Huckleberry Finn*
-  - *The Adventures of Tom Sawyer (Parts 1-8)*
-  - *The Tragedy of Pudd'nhead Wilson*
-- **William Shakespeare**
-  - *All's Well That Ends Well*
-  - *Macbeth*
-  - *The Merry Wives of Windsor*
-- **Oscar Wilde**
-  - *An Ideal Husband*
-  - *The Importance of Being Earnest: A Trivial Comedy for Serious People*
-  - *The Picture of Dorian Gray*
-- **Jane Austen**
-  - *Emma*
-  - *Pride and Prejudice*
-  - *Sense and Sensibility*
-- **Charles Dickens**
-  - *Great Expectations*
-  - *Oliver Twist*
-  - *Sketches of Young Couples*
-- **Joseph Conrad**
-  - *Heart of Darkness*
-  - *Lord Jim*
-  - *The Rover*
-- **George Eliot**
-  - *Middlemarch*
-  - *Silas Marner*
-  - *The Mill on the Floss*
-- **Virginia Woolf**
-  - *Mrs Dalloway*
-  - *Night and Day*
-  - *The Voyage Out*
-- **F. Scott Fitzgerald**
-  - *The Beautiful and Damned*
-  - *The Great Gatsby*
-  - *This Side of Paradise*
+The text data was sourced from [Project Gutenberg](https://www.gutenberg.org/), which provides free eBooks of literary works that are no longer under U.S. copyright protection. We selected a minimum of three books per author for a set of 10 authors, totaling 39 texts.
 
-## Data Preprocessing
+## Preprocessing
 
-The preprocessing involved manually opening each text file to remove non-essential content such as headers, footers, and any text not authored by the book's author. This step was critical in ensuring the text data mainly contains the author's original words, although it does not guarantee absolute cleanliness. The goal was to minimize noise and non-authorial text that could affect the accuracy of author attribution.
+The following preprocessing steps were carried out to ensure the data is more conducive for our analysis:
 
-## File Naming Convention
+1. **Manual Download**: Each book was downloaded in the "Plain Text UTF-8" format.
+2. **Header and Footer Removal**: Manual inspection and removal of Gutenberg's headers and footers, along with any content not directly part of the original book or authored by the respective author, was conducted. This step is crucial to reduce the noise in the data that could potentially affect our analysis and modeling.
+3. **File Naming**: The cleaned text files were saved following a consistent naming convention to facilitate easy reference and organization:
+   - Format: `authorfirstname_authorlastname-booknamefirstword_booknamesecondword.txt`
+   - Example: `jane_austen-pride_prejudice.txt`
+   - Note: Spaces and apostrophes have been removed from names and titles.
 
-Each book's text was saved in a .txt file named according to the format:
+## Dataset Structure
+
+The dataset, post-cleaning, consists of 39 `.txt` files, each corresponding to a different literary work. These files are prepared with the intention of creating a structured `.csv` file for further data processing and analysis in a Jupyter notebook.
+
+## Project Outline
+
+- `/data`: Contains the preprocessed `.txt` files of the literary works.
+- `README.md`: Describes the dataset.
+
+## Future Work
+
+The next phase will involve extensive data analysis in Jupyter notebooks, where we will:
+- Convert the `.txt` files into a structured `.csv` format.
+- Perform exploratory data analysis to understand the characteristics of each author's writing style.
+- Develop and train machine learning models for authorship attribution.
+- Validate and test the models to ensure robustness and accuracy.
+
+## Citation and Acknowledgments
+
+This project utilizes data obtained from Project Gutenberg. We express our gratitude to the contributors and maintainers of Project Gutenberg for providing open access to these literary works.
+
+When referencing the data used in this project, please cite:
 ```
-authorfirstname_authorlastname-booknamefirstword_booknamesecondword.txt
+Project Gutenberg. (n.d.). Retrieved from https://www.gutenberg.org/
 ```
-This naming convention aids in quick identification of files without dealing with spaces or ambiguous titles.
-
-## Structure
-
-- `/data`: This folder contains the cleaned text files.
-- `README.md`: Provides an overview and detailed description of the data.
