@@ -59,7 +59,7 @@ authorfirstname_authorlastname-booknamefirstword_booknamesecondword.txt
 ```
 This naming convention aids in quick identification of files without dealing with spaces or ambiguous titles.
 
-## Project Structure
+## Structure
 
 - `/data`: This folder contains the cleaned text files.
 - `README.md`: Provides an overview and detailed description of the data.
