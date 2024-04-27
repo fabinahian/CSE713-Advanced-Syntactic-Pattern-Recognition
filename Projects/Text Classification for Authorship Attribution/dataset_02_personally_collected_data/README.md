@@ -16,7 +16,7 @@ The following preprocessing steps were carried out to ensure the data is more co
 2. **Header and Footer Removal**: Manual inspection and removal of Gutenberg's headers and footers, along with any content not directly part of the original book or authored by the respective author, was conducted. This step is crucial to reduce the noise in the data that could potentially affect our analysis and modeling.
 3. **File Naming**: The cleaned text files were saved following a consistent naming convention to facilitate easy reference and organization:
    - Format: `authorfirstname_authorlastname-booknamefirstword_booknamesecondword.txt`
-   - Example: `jane_austen-pride_prejudice.txt`
+   - Example: `jane_austen-pride_and_prejudice.txt`
    - Note: Spaces and apostrophes have been removed from names and titles.
 
 ## Dataset Structure
