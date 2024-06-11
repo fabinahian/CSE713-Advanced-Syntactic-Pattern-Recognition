@@ -12,11 +12,3 @@ Welcome to the repository for my MSc in CSE course, CSE713 - Advanced Syntactic 
 
 Make sure you have the necessary software and libraries installed before running the code. Check the documentation within each directory for specific requirements.
 
-## Getting Help
-
-If you have any questions or suggestions, feel free to reach out!
-
-**Fabi Nahian Madhurja**
-- Email: fabinahian@gmail.com
-
-Your feedback and contributions are welcome. Happy coding! 🚀
